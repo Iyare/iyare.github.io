@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+ }
+body {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)),
+   url("https://picsum.photos/1920/1080/?random");
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: #ffffff;
+   margin: 0 auto;
+   text-align: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+   font-family: 'Didact Gothic', sans-serif;
+
+}
+h1 {
+    font-family: 'Cookie', cursive;
+    font-size: 3em;
+}
+blockquote{
+    font-size:2em;
+}
+
+cite{
+    font-style: normal;
+}
+
+.fas{
+    padding: 10px;
+}
+
+.social-icon {
+    font-size:2em;
+    margin: 5px;
+}
+a {
+    color: #ffffff;
+}
+/* .container{
+    padding: 50px;
+    height: 100%;
+} */
