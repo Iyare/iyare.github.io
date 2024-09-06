@@ -5,6 +5,7 @@
   --slate-300: hsl(212, 45%, 89%);
   --slate-500: hsl(216, 15%, 48%);
   --slate-900: hsl(218, 44%, 22%);
+--dropshadow:#0707071f;
 }
 
 body {
@@ -33,6 +34,7 @@ main {
   padding: 16px;
   padding-bottom: 40px;
   border-radius: 20px;
+  box-shadow: 0 0 20px var(--dropshadow);
 }
 
 .card img {
