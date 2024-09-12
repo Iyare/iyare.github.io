@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --yellow: #f4d04e;
+  --gray-950: #111111;
+  --gray-500: #6b6b6b;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  margin: 0;
+  background-color: var(--yellow);
+}
+
+main {
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  background-color: var(--white);
+  border: 2px solid var(--gray-950);
+  border-radius: 20px;
+  max-width: 384px;
+  max-height: 522px;
+  color: var(--gray-950);
+  line-height: 1.5;
+  box-shadow: 8px 8px var(--gray-950);
+}
+
+.card {
+  padding: 24px;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 24px;
+}
+h1:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+h1 + p {
+  color: var(--gray-500);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.tag {
+  background-color: var(--yellow);
+  width: 82px;
+  height: 29px;
+  border-radius: 4px;
+}
+
+.tag p {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 4px 12px;
+}
+
+span {
+  display: inline-block;
+}
+
+.date {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--gray-950);
+  margin-top: 12px;
+}
+
+.author {
+  display: flex;
+  justify-content: space-between;
+  height: 32px;
+  width: 129px;
+}
+
+.author h2 {
+  font-size: 14px;
+  color: var(--gray-950);
+  align-self: center;
+  font-weight: 900;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
