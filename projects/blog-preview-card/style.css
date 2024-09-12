@@ -24,8 +24,9 @@ article {
   background-color: var(--white);
   border: 2px solid var(--gray-950);
   border-radius: 20px;
-  max-width: 384px;
-  max-height: 522px;
+  /* max-width: 327px; */
+  max-width: 86.9vw;
+  max-height: 501px;
   color: var(--gray-950);
   line-height: 1.5;
   box-shadow: 8px 8px var(--gray-950);
@@ -37,12 +38,14 @@ article {
 
 .card img {
   border-radius: 10px;
+  width: 100%;
 }
 
 h1 {
   font-weight: 900;
-  font-size: 24px;
+  font-size: 20px;
 }
+
 h1:hover {
     color: var(--yellow);
     cursor: pointer;
@@ -51,19 +54,19 @@ h1:hover {
 h1 + p {
   color: var(--gray-500);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .tag {
   background-color: var(--yellow);
-  width: 82px;
-  height: 29px;
+  width: 73px;
+  height: 26px;
   border-radius: 4px;
 }
 
 .tag p {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   padding: 4px 12px;
 }
 
@@ -72,7 +75,7 @@ span {
 }
 
 .date {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
   color: var(--gray-950);
   margin-top: 12px;
@@ -92,6 +95,11 @@ span {
   font-weight: 900;
 }
 
+.author img {
+    width: auto;
+}
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -99,4 +107,35 @@ span {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (min-width:380px) {
+
+article {
+
+    max-width: 384px;
+    max-height: 522px;
+  }
+  .tag {
+    width: 82px;
+    height: 29px;
+  }
+
+.tag p {
+font-size: 14px;
+}
+  h1 + p {
+
+    font-size: 16px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-weight: 900;
+    font-size: 24px;
+  }
 }
