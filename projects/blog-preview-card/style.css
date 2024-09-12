@@ -11,11 +11,13 @@ body {
   font-family: "Figtree", sans-serif;
   margin: 0;
   background-color: var(--yellow);
+  height: 100vh;
 }
 
 main {
-  height: 98vh;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -47,8 +49,8 @@ h1 {
 }
 
 h1:hover {
-    color: var(--yellow);
-    cursor: pointer;
+  color: var(--yellow);
+  cursor: pointer;
 }
 
 h1 + p {
@@ -96,24 +98,22 @@ span {
 }
 
 .author img {
-    width: auto;
+  width: auto;
 }
-
 
 .attribution {
   font-size: 11px;
   text-align: center;
 
+  margin: 30px 0;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-
-@media screen and (min-width:380px) {
-
-article {
-
+@media screen and (min-width: 430px) {
+  article {
     max-width: 384px;
     max-height: 522px;
   }
@@ -122,11 +122,11 @@ article {
     height: 29px;
   }
 
-.tag p {
-font-size: 14px;
-}
-  h1 + p {
+  .tag p {
+    font-size: 14px;
+  }
 
+  h1 + p {
     font-size: 16px;
   }
 
