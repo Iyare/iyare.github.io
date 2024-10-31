@@ -2,3 +2,7 @@ Features to be added
 1. Figma design for portfolio website
 2. Use AI to produce professional picture
 3. 
+
+Mini projects
+ - Random background color changer
+ 

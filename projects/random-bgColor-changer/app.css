@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #434443;
+    color: #fff
+}
