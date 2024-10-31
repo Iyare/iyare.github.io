@@ -1,6 +1,7 @@
 const changeBtn = document.querySelector("#changeBg");
 
-const body = document.querySelector("body");
+const colorValue = document.querySelector("#colorValue");
+const body = document.body;
 
 changeBtn.addEventListener("click", () => {
     // making a random red channel value
@@ -19,4 +20,6 @@ changeBtn.addEventListener("click", () => {
     // Update the background color
     body.style.backgroundColor = rgbValue;
     
+    colorValue.innerText = rgbValue;
 })
+
