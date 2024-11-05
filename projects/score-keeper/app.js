@@ -19,8 +19,31 @@ team2Btn.addEventListener("click", () => {
 })
 
 
-// reset button
+// reset button implementation
 const resetBtn = document.querySelector("#resetBtn");
 resetBtn.addEventListener("click", function () {
-    
+    team1currentScore = 1;
+    team2currentScore = 1;
+    team2score.innerText = 0;
+    team1score.innerText = 0;
+    team1.innerText = "Team 1";
+    team2.innerText = "Team 2";
+})
+
+
+// Pick target locations for team names
+const team1 = document.querySelector("#team1-name");
+const team2 = document.querySelector("#team2-name");
+
+//Retrieve select element
+const team1Option = document.querySelector("#team1");
+const team2Option = document.querySelector("#team2");
+
+
+// Set  an event listener on the section tag
+team1Option.addEventListener("change", () => { 
+    team1.innerText = team1Option.value;
+})
+team2Option.addEventListener("change", () => { 
+    team2.innerText = team2Option.value;
 })
