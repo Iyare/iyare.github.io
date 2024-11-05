@@ -1,50 +1,64 @@
-:root{
-    --white : #fff;
+:root {
+  --white: #fff;
 }
 
 body {
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url("images/football-field-bg.jpg");
-    margin: 0;
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    text-align: center;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("images/football-field-bg.jpg");
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
-
 main {
-    margin: 0 auto;
-    max-width: 501px;
-    background-color: #fff;
-
+  margin: 0 auto;
+  max-width: 501px;
+  background-color: var(--white);
 }
 
 #score-board {
-    background-image: url("images/football-field.jpg");
-    background-size: cover;
-    box-shadow: 5px 200px 5px 5px  #00000052 inset;
-    color: var(--white);
-    
-    #scores {
-        display: flex;
-        flex-wrap: nowrap;
-        align-content: space-evenly;
-        
-        align-items: center;
-    }
-    
-    .score {
-        font-size: 5rem;
-        font-weight: 700;
-    }
-    
-    hr {
-        width: 50px;
-        height: 10px;
-        background-color: var(--white);
-        border: none;
+  background-image: url("images/football-field.jpg");
+  background-size: cover;
+  box-shadow: 5px 2000px 5px 5px #00000091 inset;
+  background-position: center;
+  color: var(--white);
 
+  #scores {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    padding-top: 2em;
+  }
+
+  .score {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+
+  
+  #time {
+    h2 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 400;
     }
+    
+    #time-left {
+        background-color: var(--white);
+        width: 120px;
+        margin:0 auto;
+        padding:  0.1rem;
+        color: red;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+  }
+}
+
+
+#teams {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
 }
