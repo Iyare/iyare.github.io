@@ -15,8 +15,8 @@ team1Btn.addEventListener("click", () => {
 })
 
 team2Btn.addEventListener("click", () => {
-    team2score.innerText = team2currentScore++ ;
-})
+    team2score.innerText = team2currentScore++;
+});
 
 
 // reset button implementation
@@ -28,7 +28,9 @@ resetBtn.addEventListener("click", function () {
     team1score.innerText = 0;
     team1.innerText = "Team 1";
     team2.innerText = "Team 2";
-})
+    team1Option.value = "";
+    team2Option.value = "";
+});
 
 
 // Pick target locations for team names
@@ -47,3 +49,25 @@ team1Option.addEventListener("change", () => {
 team2Option.addEventListener("change", () => { 
     team2.innerText = team2Option.value;
 })
+
+
+// Pick start button for timer
+const startBtn = document.querySelector("#startBtn");
+
+// Target location for time
+const timeLeft = document.querySelector("#time-left");
+
+
+startBtn.addEventListener("click", () => {
+    let duration = 0
+    setInterval(() => {
+        timeLeft.innerText = duration++
+    }, 1000)
+});
+
+const minutes = 0;
+const seconds = 0;
+
+while (!minutes) {
+    
+}
