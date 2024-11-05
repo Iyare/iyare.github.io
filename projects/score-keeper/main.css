@@ -16,6 +16,7 @@ body {
   box-shadow: 0 30000px rgba(0, 0, 0, 0.459) inset;
   h1{
     margin-top: 0;
+    padding-top: 1em;
     color:var(--white);
   }
 }
@@ -23,6 +24,7 @@ body {
 main {
   margin: 0 auto;
   max-width: 501px;
+  min-width: 200px;
   background-color: var(--white);
   border-radius: 10px;
 }
@@ -131,6 +133,7 @@ main {
     font-size: 1rem;
     color: var(--white);
     font-weight: 600;
+    
   }
 
   
@@ -140,14 +143,18 @@ main {
   }
   #team1-update:hover{
     background-color: #004da5;
+    box-shadow: 0px 0px 10px #0e0e0e88 inset;
   }
   
   #startBtn {
     grid-row: 1/1;
     background-color: #ffa600;
+    
   }
   #startBtn:hover {
-    background-color: #855b00;
+    /* background-color: #855b00; */
+    background-color: #ffa600;
+    box-shadow: 0px 0px 10px #0e0e0e88 inset;
   }
   
   #resetBtn {
@@ -155,6 +162,7 @@ main {
   }
   #resetBtn:hover {
     background-color: #970000;
+    box-shadow: 0px 0px 10px #0e0e0e88 inset;
   }
   
   #team2-update{
@@ -163,6 +171,7 @@ main {
   }
   #team2-update:hover{
   background-color: #287400;
+  box-shadow: 0px 0px 10px #0e0e0e88 inset;
   }
   
 }
