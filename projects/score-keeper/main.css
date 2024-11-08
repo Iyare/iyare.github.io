@@ -1,6 +1,6 @@
 :root {
   --white: #fff;
-  --gray: #ebebeb91;
+  --gray: #cccccc91;
 }
 
 body {
@@ -125,7 +125,7 @@ main {
 
 #controls {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, minmax(100px, 190px));
   
   button {
     border:none;

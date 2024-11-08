@@ -45,9 +45,11 @@ const team2Option = document.querySelector("#team2");
 // Set  an event listener on the section tag
 team1Option.addEventListener("change", () => { 
     team1.innerText = team1Option.value;
+    // team1Btn.innerText = team1Option.value;
 })
 team2Option.addEventListener("change", () => { 
     team2.innerText = team2Option.value;
+    // team2Btn.innerText = team2Option.value;
 })
 
 
@@ -61,13 +63,13 @@ const timeLeft = document.querySelector("#time-left");
 startBtn.addEventListener("click", () => {
     let duration = 0
     setInterval(() => {
-        timeLeft.innerText = duration++
+        timeLeft.innerText = `00:${duration++}`
     }, 1000)
 });
 
-const minutes = 0;
-const seconds = 0;
+// const minutes = 0;
+// const seconds = 0;
 
-while (!minutes) {
+// while (!minutes) {
     
-}
+// }
