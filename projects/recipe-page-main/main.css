@@ -43,7 +43,7 @@ img {
 }
 
 hr {
-  border-color: var(--stone-150);
+  border: 1px solid var(--stone-150);
   margin: 32px 0;
 }
 
@@ -51,6 +51,7 @@ h1,
 h2 {
   font-family: var(--young-serif);
   font-weight: 400;
+  margin: 0;
 }
 
 h1 {
@@ -62,7 +63,7 @@ h1 {
 h2 {
   color: var(--brown-800);
   font-size: var(--text-preset-2);
-  margin-bottom: 16px;
+  /* margin: 0; */
 }
 
 h3 {
@@ -77,7 +78,16 @@ h3 {
   font-weight: 600;
   color: #5f564d;
 }
+
+.contents{
+    padding: 40px 0;
+}
+
+p{
+    padding-top: 24px;
+}
 .timing {
+margin: 32px 0;
   padding: 24px;
   background-color: #fff7fb;
   border-radius: 12px;
@@ -102,7 +112,7 @@ table {
   border-collapse: collapse;
   
   tr {
-    border-bottom: 1px solid var(--stone-600);
+    border-bottom: 1px solid var(--stone-150);
   }
   
   tr:last-of-type{
@@ -122,6 +132,7 @@ table {
     color: var(--stone-600);
     font-size: var(--text-preset-4);
     text-align: left;
+    padding: 24px 0;
   }
 }
 
