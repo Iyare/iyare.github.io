@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background-color: #F3E5D7 ;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+/* FONTS*/
+
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  /* // <uniquifier>: Use a unique and descriptive class name
+  // <weight>: Use a value from 100 to 900
+   */
+  .outfit-400 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+main {
+    background-color: #fff;
+    max-width: 736px;
+    border-radius: 24px;
+    padding: 40px;
+    margin: 128px auto; 
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+h1,h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.bold{
+    font-weight: 600;
+    color: #5F564D;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
