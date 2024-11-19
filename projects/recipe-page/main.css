@@ -148,6 +148,10 @@ table {
     margin: 128px auto;
   }
   
+  img {
+    border-radius: 12px;
+  }
+  
   .contents{
       padding: 40px 0;
   }
